@@ -6,6 +6,9 @@
       <hr> 
       <app-shopping-list *ngIf="loadedFeature === 'shopping-list'"></app-shopping-list>
       <p appHighlight [defaultColor]="'yellow'">Test</p>
+      <div *appUnless="false">
+        <p>Test structural directive</p>
+      </div>
     </div>
   </div>
 </div>
